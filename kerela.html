@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./states.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Move', 'Percentage'],
+          ["2015", 15.36],
+          ["2016", 16.91],
+          ["2017", 17.12],
+          ["2018", 18.77]  
+        ]);
+
+        var options = {
+          width: 800,
+          legend: { position: 'none' },
+          chart: {
+            title: 'Carbon Footprint Statistics - Kerela',
+            },
+          axes: {
+            x: {
+              0: { side: 'top', label: 'Carbon Footprint (metric tons CO2e)'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "90%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        // Convert the Classic options to Material options.
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      };
+    </script>
+  </head>
+  <body >
+    <header>
+      <div class="header">
+      <a href="#default" class="logo">Kerala</a>
+      <div class="header-right">
+        <a class="active" href="./index.html">Home</a>
+      </div>
+    </div> 
+  </header>
+    <div class="container">
+    <div class="graph">
+      <div id="top_x_div" style="width: 500px; height: 500px;"></div>
+    </div>
+    <p class="text1">
+      In recent years, Kerala, renowned for its verdant landscapes and unique cultural heritage, has been experiencing a significant surge in economic and infrastructural development. Among the various sectors experiencing growth, the transportation sector stands out as a notable contributor to the state's carbon emissions.
+      From 2015 to 2018, Kerala witnessed a steady increase in carbon emissions stemming from transportation activities. In 2015, approximately 15 million metric tonnes of CO2 equivalent were emitted, marking the beginning of this upward trajectory. By 2018, this figure had escalated to an estimated 18 million metric tonnes, signifying a notable surge over the four-year period.
+      Several factors have propelled this rise in carbon emissions from transportation. The burgeoning population, coupled with rapid urbanization and economic expansion, has led to a surge in vehicular traffic across the state. Kerala's well-developed road network, while facilitating connectivity and economic growth, has also contributed to increased congestion and emissions. Furthermore, the rise in disposable income has spurred greater ownership and usage of personal vehicles, exacerbating the carbon footprint of the transportation sector.
+      The dominance of fossil fuel-powered vehicles in Kerala's transportation landscape has been a significant driver of carbon emissions. While efforts to promote cleaner transportation alternatives such as electric vehicles are underway, their adoption remains relatively nascent, unable to offset the carbon footprint of conventional vehicles effectively.
+      Addressing the burgeoning carbon emissions from Kerala's transportation sector requires a multi-faceted approach. Investments in public transportation infrastructure, including the expansion of metro and bus rapid transit systems, can incentivize commuters to opt for greener modes of transport. Additionally, policies promoting the adoption of electric vehicles and incentivizing sustainable transportation practices among citizens are imperative to curb emissions.
+      In conclusion, Kerala's transportation sector has emerged as a significant contributor to the state's carbon emissions, posing environmental challenges amidst its developmental aspirations. By implementing proactive measures and fostering a culture of sustainable mobility, Kerala can mitigate its transportation-related carbon footprint while fostering inclusive and environmentally-responsible growth.
+    </p>
+</div>
+  </body>
+</html>

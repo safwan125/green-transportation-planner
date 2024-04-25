@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(243deg,#35fd8c,#00fff6,#3e7cff,#1e00ff);
+    background-size: 360% 360%;
+    animation: gradient-animation 30s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.video1 {
+    max-width: 1240px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(133, 255, 184, 0);
+    box-shadow: 5px 5px 50px 5px rgba(57, 57, 57, 0.608);
+    border-radius: 10px;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}

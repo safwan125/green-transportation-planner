@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./pexels-tomas-anunziata-3876397.jpg);
+    width: 100%;
+}
+.heading{
+    background: rgb(0,15,255);
+    background: linear-gradient(90deg, rgba(0, 17, 255, 0.397) 0%, rgba(242, 0, 255, 0.293) 100%); 
+    font-size: 330px;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(0, 153, 64, 0.523) 0%, rgba(2, 41, 149, 0.556) 100%);
+    box-shadow: 5px 5px 50px 5px rgba(57, 57, 57, 0.608);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #15b300;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.container > h1{
+    color: #fff;
+}
+
+.container > label{
+    color: #fff;
+}
+
+.intro{
+    justify-content: left;
+    text-align: left;
+    margin: 3vh;
+    width: 96vw;
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 10px;
+    padding: 5vh;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+#intro1{
+    color: rgb(0, 28, 52);
+    font-size: 1.5em;
+}
+.container > button{
+    color: #fff;
+}

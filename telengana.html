@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./states.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Move', 'Percentage'],
+          ["2018", 66.56],
+          ["2017", 67.53],
+          ["2016", 64.66],
+          ["2015", 58.01],
+          
+        ]);
+
+        var options = {
+          width: 800,
+          legend: { position: 'none' },
+          chart: {
+            title: 'Carbon Footprint Statistics - Telangana',
+            },
+          axes: {
+            x: {
+              0: { side: 'top', label: 'Carbon Footprint (metric tons CO2e)'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "90%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        // Convert the Classic options to Material options.
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      };
+    </script>
+  </head>
+  <body >
+    <header>
+      <div class="header">
+      <a href="#default" class="logo">Telangana</a>
+      <div class="header-right">
+        <a class="active" href="./index.html">Home</a>
+      </div>
+    </div> 
+  </header>
+    <div class="container">
+      <div class="graph">
+    <div id="top_x_div" style="width: 500px; height: 500px;"></div>
+  </div>
+    <p class="text1">
+      As Telangana strides forward on the path of progress and modernization, its transportation sector stands as a vital artery pulsating with activity. However, this surge in mobility has brought along a concerning uptick in carbon emissions, posing environmental challenges for the state.
+      Between 2015 and 2018, Telangana witnessed a steady rise in carbon emissions stemming from transportation activities. In 2015, an estimated 10 million metric tonnes of CO2 equivalent were emitted, marking the beginning of this trajectory. By 2018, this figure had surged to approximately 12 million metric tonnes, reflecting the growing carbon footprint of the transportation sector over the four-year period.
+      Several factors underpin this escalation in carbon emissions. Telangana's burgeoning population, rapid urbanization, and expanding industrial landscape have fueled the demand for transportation services. As cities sprawl and economic activities flourish, the reliance on vehicles for commuting, goods movement, and logistics has intensified, contributing to increased emissions.
+      The predominance of fossil fuel-powered vehicles remains a significant contributor to Telangana's transportation-related carbon footprint. While strides have been made in promoting cleaner alternatives such as compressed natural gas (CNG) and electric vehicles (EVs), their adoption rates have yet to reach levels capable of substantially curbing emissions.
+      To address the burgeoning carbon emissions from Telangana's transportation sector, a comprehensive strategy is imperative. Investing in sustainable transportation infrastructure, such as efficient public transit systems and non-motorized transport networks, can help incentivize eco-friendly commuting options. Furthermore, incentivizing the adoption of EVs through subsidies, infrastructure development, and policy support can accelerate the transition towards greener mobility solutions.
+      In conclusion, Telangana's transportation sector stands at a critical juncture, balancing the imperatives of economic growth with environmental sustainability. By embracing innovation, fostering collaboration between public and private stakeholders, and prioritizing sustainable transportation policies, Telangana can navigate the challenges posed by carbon emissions while charting a path towards a greener, more resilient future.
+    </p>
+</div>
+  </body>
+</html>

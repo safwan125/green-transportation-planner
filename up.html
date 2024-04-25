@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./states.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Move', 'Percentage'],
+          ["2015", 269.70],
+          ["2016", 280.00],
+          ["2017", 299.00],
+          ["2018", 292.50]
+        ]);
+
+        var options = {
+          width: 800,
+          legend: { position: 'none' },
+          chart: {
+            title: '',
+            },
+          axes: {
+            x: {
+              0: { side: 'top', label: 'Carbon Footprint (metric tons CO2e)'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "90%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        // Convert the Classic options to Material options.
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      };
+    </script>
+  </head>
+  <body >
+    <header>
+      <div class="header">
+      <a href="#default" class="logo">Uttar Pradesh</a>
+      <div class="header-right">
+        <a class="active" href="./index.html">Home</a>
+      </div>
+    </div> 
+  </header>
+    <div class="container">
+      <div class="graph">
+    <div id="top_x_div" style="width: 500px; height: 500px;"></div>
+  </div>
+  <div class="text1">
+    <p style="font-size: 20px; color: aliceblue;">
+      Uttar Pradesh, India's most populous state and a crucible of diversity, is witnessing unprecedented transformations across its transportation sector. However, amidst this rapid evolution, the state grapples with the daunting challenge of escalating carbon emissions, stemming largely from its bustling transportation networks.
+      Between 2015 and 2018, Uttar Pradesh experienced a significant surge in carbon emissions originating from transportation activities. In 2015, an estimated 25 million metric tonnes of CO2 equivalent were emitted, signaling the onset of an upward trajectory. By 2018, this figure had surged to approximately 28 million metric tonnes, underscoring the mounting carbon footprint of the transportation sector over the four-year period.
+      A confluence of factors propels this escalation in carbon emissions. Uttar Pradesh's burgeoning population, rapid urbanization, and expanding industrial base have catalyzed the demand for transportation services. As cities burgeon and economic corridors flourish, the reliance on automobiles for personal commuting, goods movement, and freight logistics has intensified, amplifying emissions.
+      The prevalence of conventional, fossil fuel-powered vehicles exacerbates Uttar Pradesh's transportation-related carbon footprint. While nascent efforts to promote alternative fuels and electric mobility are underway, their penetration remains limited, insufficient to mitigate the burgeoning emissions effectively.
+      Addressing the mounting carbon emissions from Uttar Pradesh's transportation sector necessitates a holistic strategy. Investments in sustainable transportation infrastructure, including robust public transit systems, last-mile connectivity solutions, and non-motorized transport networks, can incentivize the adoption of eco-friendly commuting options. Furthermore, policies incentivizing the uptake of electric vehicles, coupled with infrastructure development and regulatory support, can accelerate the transition towards greener mobility solutions.
+      In conclusion, Uttar Pradesh stands at a pivotal juncture, navigating the intersection of burgeoning transportation demands and environmental imperatives. By embracing innovation, fostering collaborative frameworks, and prioritizing sustainable transportation policies, Uttar Pradesh can steer towards a future characterized by resilient, low-carbon mobility solutions, ensuring a harmonious balance between economic growth and environmental stewardship.
+    </p>
+  </div>
+</div>
+  </body>
+</html>
